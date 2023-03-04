@@ -1,0 +1,184 @@
+/* --------------------------
+            GENERAL
+   --------------------------
+*/
+
+body
+{
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #AC4A51;
+}
+
+h1
+{
+    font-weight: bold;
+    color: #AC4A51;
+    text-align: center;
+    margin: auto;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+#logo
+{
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+ul
+{
+    list-style: none;
+}
+
+section .heading
+{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.dividerlow
+{
+    width: 320%;
+    height: 2px;
+    background-color: #AC4A51;
+    margin: 0 auto 20px;
+    position: relative;
+    right: 10px;
+}
+
+table
+{
+    width: 200%;
+}
+
+
+th
+{
+    width: 50%;
+}
+
+
+
+
+/* --------------------------
+            NAVBAR
+   --------------------------
+*/
+
+.navbar-toggler
+{
+    color: #AC4A51;
+    background-color: #AC4A51;
+}
+
+
+.navbar
+{
+    background-color: #F7F7F7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.navbar-nav
+{
+   margin: 0px auto;
+   text-align: center;
+}
+
+.nav-link
+{
+    color: #333333 !important;
+    margin: 0 6px;
+}
+
+.nav-link.active,
+.nav-link:hover
+{
+    color: #AC4A51 !important;
+}
+
+
+
+
+
+
+
+
+/* --------------------------
+            ABOUT
+   --------------------------
+*/
+
+
+#about
+{
+    background-color: #AC4A51;
+}
+
+#about #avatar1
+{
+    height: 910px;
+    position: relative;
+    top: -40px;
+}
+
+#about h2
+{
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#bio
+{
+    margin: 30px 20px;
+    position: relative;
+    top: 20px;
+}
+
+
+
+
+
+
+/* --------------------------
+            RESERVATION
+   --------------------------
+*/
+
+#reservation
+{
+    background-color: #F7F7F7;
+}
+
+#reservation h1
+{
+    color: #AC4A51;
+}
+
+#reservation
+{
+    padding: 65px 0 80px 0;
+}
+
+#reservation h4
+{
+    padding-top: 90px;
+}
+
+#reservation p
+{
+    color: #888888;
+    margin-left: 110px;
+}
+
+
+
+
+
