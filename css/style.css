@@ -5,8 +5,8 @@
 
 body
 {
-    font-family: 'Comic Sans MS', sans-serif;
-    background-color: #AC4A51;
+    font-family: 'Shantell Sans', 'cursive';
+    background-color: #982C29;
 }
 
 h1
@@ -15,6 +15,11 @@ h1
     color: #AC4A51;
     text-align: center;
     margin: auto;
+}
+
+#logo
+{
+    padding-top: 10px;
 }
 
 img
@@ -62,7 +67,15 @@ section .heading
     border: 1px solid #333333;
 }
 
+.insta
+{
+    color: #E65447;
+}
 
+.facebook
+{
+    color: #0676E8;
+}
 
 
 
@@ -106,12 +119,6 @@ section .heading
 }
 
 
-
-
-
-
-
-
 /* --------------------------
             ABOUT
    --------------------------
@@ -120,14 +127,12 @@ section .heading
 
 #about
 {
-    background-color: #AC4A51;
+    background-color: #982C29;
 }
 
 #about #avatar1
 {
-    height: 910px;
-    position: relative;
-    top: -40px;
+    height: 870px;
 }
 
 #about h2
@@ -135,6 +140,7 @@ section .heading
     color: #ffffff;
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #bio
@@ -144,47 +150,67 @@ section .heading
     top: 20px;
 }
 
+#bio p
+{
+    color: #F7F7F7;
+}
 
-
-
-
+.mini
+{
+    text-align: center;
+    position: relative;
+    top: -700px;
+    left: 20px;
+}
 
 /* --------------------------
-            RESERVATION
+            BILLETTERIE
    --------------------------
 */
 
-#reservation
+#billetterie
 {
     background-color: #F7F7F7;
+    padding: 65px 0 80px 0;
 }
 
-#reservation h1
+#billetterie h1
 {
     color: #AC4A51;
     padding-bottom: 50px;
 }
 
-#reservation
-{
-    padding: 65px 0 80px 0;
-}
-
-#reservation h5
+#billetterie h5
 {
     font-size: 1.2em;
 }
 
-#reservation #ville
+#billetterie #ville
 {
     color: #888888;
 
 }
 
-#reservation #heure
+#billetterie #heure
 {
     color: #888888;
 }
+
+.enable
+{
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border: 1px solid #888888;
+    color: #888888;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.3s ease-in 0s;
+    text-transform: uppercase;
+    margin: auto;
+}
+
 
 
 
@@ -195,7 +221,7 @@ section .heading
 
 #pictures
 {
-    background-color: #AC4A51;
+    background-color: #982C29;
 }
 
 #pictures h1
@@ -210,10 +236,9 @@ section .heading
     height: 100%;
 }
 
-#pictures .col-md-3
+#pictures .col-md-4
 {
     margin-bottom: 20px;
-    text-align: center;
 }
 
 #pictures .heading
@@ -224,12 +249,75 @@ section .heading
 .img-thumbnail
 {
     border: none !important;
-    margin: auto auto;
+    margin: auto;
+    padding: 0.10rem;
 }
 
-.img-thumbnail1
+
+
+/* --------------------------
+            Critiques
+   --------------------------
+*/
+
+#critiques 
 {
-    background: none;
-    border: none !important;
-    margin: auto auto;
+    background-color: #F7F7F7;
+    padding-top: 10px;
 }
+
+#critiques .heading
+{
+    padding-bottom: 20px;
+}
+
+.billetreduc
+{
+    text-align: center;
+}
+
+.noteCritique
+{
+    padding-top: 15px;
+}
+
+.notes
+{
+    background-color: #F7F7F7;
+}
+
+.titreh3
+{
+    text-align: center;
+}
+
+.titreh4
+{
+    text-align: center;
+}
+
+.para
+{
+    text-align: center;
+}
+
+.carousel-item
+{
+    padding-top: 12px;
+    width: 407px;
+    height: 290px;
+    text-align: center;
+}
+
+
+/* --------------------------
+            Contact
+   --------------------------
+*/
+
+#contact h1
+{
+    color: #F7F7F7;
+    padding-top: 10px;
+}
+
