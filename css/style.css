@@ -17,9 +17,23 @@ h1
     margin: auto;
 }
 
-#logo
+#logo img
 {
-    padding-top: 10px;
+    animation: slide 1.5s ease-out;
+}
+
+@keyframes slide
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 img
@@ -32,6 +46,7 @@ img
 {
     background-color: #F7F7F7;
     text-align: center;
+    padding-top: 10px;
 }
 
 ul
@@ -42,7 +57,7 @@ ul
 section .heading
 {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .button1
@@ -67,15 +82,7 @@ section .heading
     border: 1px solid #333333;
 }
 
-.insta
-{
-    color: #E65447;
-}
 
-.facebook
-{
-    color: #0676E8;
-}
 
 
 
@@ -86,8 +93,8 @@ section .heading
 
 .navbar-toggler
 {
-    color: #AC4A51;
-    background-color: #AC4A51;
+    color: #982C29;
+    background-color: #982C29;
 }
 
 
@@ -133,6 +140,8 @@ section .heading
 #about #avatar1
 {
     height: 870px;
+    position: relative;
+    top: -55px;
 }
 
 #about h2
@@ -148,13 +157,28 @@ section .heading
     margin: 30px 20px;
     position: relative;
     top: 20px;
+    animation: apparition 1.5s ease-out;
+}
+
+@keyframes apparition
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+        
+    }
 }
 
 #bio p
 {
     color: #F7F7F7;
 }
-
 
 /* --------------------------
             BILLETTERIE
@@ -164,7 +188,7 @@ section .heading
 #billetterie
 {
     background-color: #F7F7F7;
-    padding: 65px 0 80px 0;
+    padding: 25px 0 30px 0;
 }
 
 #billetterie h1
@@ -212,6 +236,12 @@ section .heading
    --------------------------
 */
 
+#pictures .heading
+{
+    text-align: center;
+    padding-bottom: 0;
+}
+
 #pictures
 {
     background-color: #982C29;
@@ -220,13 +250,13 @@ section .heading
 #pictures h1
 {
     color: #F7F7F7;
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
 #pictures img
 {
     width: 100%;
-    height: 100%;
+    height: 356px;
 }
 
 #pictures .col-md-4
@@ -234,29 +264,37 @@ section .heading
     margin-bottom: 20px;
 }
 
-#pictures .heading
-{
-    padding-bottom: 50px;
-}
-
 .img-thumbnail
 {
     border: none !important;
-    margin: auto;
     padding: 0.10rem;
 }
+
+iframe
+{
+    width: 560px !important;
+    height: 311px !important;
+    box-shadow: 10px 5px 5px #333333;
+}
+
+
 
 
 
 /* --------------------------
-            Critiques
+            CRITIQUES
    --------------------------
 */
 
 #critiques 
 {
-    background-color: #F7F7F7;
+    background-color: #982C29;
     padding-top: 10px;
+}
+
+#critiques h1
+{
+    color: #f7f7f7;
 }
 
 #critiques .heading
@@ -272,6 +310,7 @@ section .heading
 .noteCritique
 {
     padding-top: 15px;
+    color: #f7f7f7;
 }
 
 .notes
@@ -304,13 +343,82 @@ section .heading
 
 
 /* --------------------------
-            Contact
+            CONTACT
    --------------------------
 */
 
+#contact
+{
+    padding: 5px 0 50px 0;
+    background-color: #f7f7f7;
+}
+
 #contact h1
 {
-    color: #F7F7F7;
+    color: #982C29;
     padding-top: 10px;
 }
 
+.form-control
+{
+    background-color: #dbd0d0;
+}
+
+#contact .button1
+{
+    margin-top: 15px;
+}
+
+
+/* --------------------------
+            FOOTER
+   --------------------------
+*/
+
+
+footer
+{
+    background-color: #f7f7f7;
+    padding: 20px 0 40px;
+}
+
+footer span
+{
+    color: #333333;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+footer span:hover
+{
+    color: #333333;
+    font-size: 27px;
+}
+
+footer h5
+{
+    color: #982C29;
+    font-weight: bold;
+}
+
+footer h6
+{
+    color: #982C29;
+    font-weight: bold;
+}
+
+.reseau img
+{
+    height: 100px;
+}
+
+.insta
+{
+    color: #333333;
+    height: 50px;
+}
+
+.facebook
+{
+    color: #0676E8;
+}
