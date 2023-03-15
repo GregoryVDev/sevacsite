@@ -3,65 +3,16 @@
    --------------------------
 */
 
-body
-{
-    font-family: 'Shantell Sans', 'cursive';
-    background-color: #982C29;
+body {
+    font-family: 'Shantell Sans', sans-serif;
 }
 
-h1
-{
-    font-weight: bold;
-    color: #AC4A51;
+section .heading {
     text-align: center;
-    margin: auto;
+    padding: 15px 0 15px;
 }
 
-#logo img
-{
-    animation: slide 1.5s ease-out;
-}
-
-@keyframes slide
-{
-    from
-    {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to
-    {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-img
-{
-    max-width: 100%;
-    height: auto;
-}
-
-#logo
-{
-    background-color: #F7F7F7;
-    text-align: center;
-    padding-top: 10px;
-}
-
-ul
-{
-    list-style: none;
-}
-
-section .heading
-{
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.button1
-{
+.button1 {
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
@@ -75,21 +26,20 @@ section .heading
     margin: auto;
 }
 
-.button1:hover
-{
+.button1:hover {
     background-color: #AC4A51;
     color: #F7F7F7;
     border: 1px solid #333333;
 }
 
-
-
-
-
 /* --------------------------
             NAVBAR
    --------------------------
 */
+
+nav img {
+    height: 80px;
+}
 
 .navbar-toggler
 {
@@ -97,75 +47,84 @@ section .heading
     background-color: #982C29;
 }
 
-
-.navbar
-{
-    background-color: #F7F7F7;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-
+.navbar-toggler-icon {
+  background-color: #982C29;
+  border: #0676E8;
 }
 
-.navbar-nav
-{
-   margin: 0px auto;
-   text-align: center;
+.navbar {
+  background-color: #f7f7f7;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.nav-link
-{
-    color: #333333 !important;
-    margin: 0 6px;
+.navbar-nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-link {
+  color: #333333 !important;
+  margin: 0 6px;
 }
 
 .nav-link.active,
-.nav-link:hover
-{
-    color: #AC4A51 !important;
+.nav-link:hover {
+  color: #982C29 !important;
 }
+
+
 
 
 /* --------------------------
-            ABOUT
+            BIOGRAPHIE
    --------------------------
 */
 
-
-#about
-{
-    background-color: #982C29;
+#biographie {
+    background-color:#982C29;
+    color: #f7f7f7;
 }
 
-#about #avatar1
-{
-    height: 870px;
-    position: relative;
-    top: -55px;
+#bio {
+        padding: 15px 0 15px;
+        font-style: italic;
+        text-align: center;
 }
 
-#about h2
-{
-    color: #ffffff;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
 
-#bio
-{
-    margin: 30px 20px;
-    position: relative;
-    top: 20px;
+#biographie img {
+    height: 525px;
+    width: 450px;
     animation: apparition 1.5s ease-out;
 }
 
-@keyframes apparition
-{
+@keyframes apparition {
     from
     {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(0px);
     }
     to
     {
@@ -175,46 +134,62 @@ section .heading
     }
 }
 
-#bio p
-{
-    color: #F7F7F7;
+
+
+#biographie .date {
+    font-weight: bold;
 }
+
+#biographie p {
+    text-align: left;
+    font-style: italic;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
 
 /* --------------------------
             BILLETTERIE
    --------------------------
 */
 
-#billetterie
-{
-    background-color: #F7F7F7;
-    padding: 25px 0 30px 0;
+#billetterie h2,h5 {
+    color:#982C29;
 }
 
-#billetterie h1
-{
-    color: #AC4A51;
-    padding-bottom: 50px;
-}
 
-#billetterie h5
-{
-    font-size: 1.2em;
-}
-
-#billetterie #ville
-{
-    color: #888888;
-
-}
-
-#billetterie #heure
-{
+#billetterie #heure {
+    font-style: italic;
     color: #888888;
 }
 
-.enable
-{
+#billetterie #ville {
+    font-style: italic;
+    color: #888888;
+}
+
+.enable {
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
@@ -223,62 +198,9 @@ section .heading
     padding: 10px 10px;
     display: inline-block;
     border-radius: 5px;
-    transition: all 0.3s ease-in 0s;
     text-transform: uppercase;
     margin: auto;
 }
-
-
-
-
-/* --------------------------
-            PICTURES
-   --------------------------
-*/
-
-#pictures .heading
-{
-    text-align: center;
-    padding-bottom: 0;
-}
-
-#pictures
-{
-    background-color: #982C29;
-}
-
-#pictures h1
-{
-    color: #F7F7F7;
-    padding-top: 20px;
-}
-
-#pictures img
-{
-    width: 100%;
-    height: 356px;
-}
-
-#pictures .col-md-4
-{
-    margin-bottom: 20px;
-}
-
-.img-thumbnail
-{
-    border: none !important;
-    padding: 0.10rem;
-}
-
-iframe
-{
-    width: 560px !important;
-    height: 311px !important;
-    box-shadow: 10px 5px 5px #333333;
-}
-
-
-
 
 
 /* --------------------------
@@ -286,59 +208,46 @@ iframe
    --------------------------
 */
 
-#critiques 
-{
-    background-color: #982C29;
-    padding-top: 10px;
+#critiques {
+  background-color: #982C29;
+  color: #f7f7f7;
+  padding-bottom: 8px;
+
 }
 
-#critiques h1
-{
-    color: #f7f7f7;
+/* --------------------------
+            GALERIE
+   --------------------------
+*/
+
+#galerie {
+  background-color: #f7f7f7;
+  color: #982C29;
 }
 
-#critiques .heading
+#galerie img
 {
-    padding-bottom: 20px;
+    width: 100%;
+    height: 356px;
 }
 
-.billetreduc
-{
-    text-align: center;
+.img-thumbnail {
+    border: none !important;
+    padding: 0.10rem;
 }
 
-.noteCritique
-{
-    padding-top: 15px;
-    color: #f7f7f7;
+#galerie .col-md-4 {
+    margin-bottom: 20px;
 }
 
-.notes
-{
-    background-color: #F7F7F7;
+iframe {
+    width: 560px !important;
+    height: 311px !important;
+    box-shadow: 10px 5px 5px #333333;
 }
 
-.titreh3
-{
-    text-align: center;
-}
-
-.titreh4
-{
-    text-align: center;
-}
-
-.para
-{
-    text-align: center;
-}
-
-.carousel-item
-{
-    padding-top: 12px;
-    width: 407px;
-    height: 290px;
-    text-align: center;
+#videos {
+  background: #982C29;
 }
 
 
@@ -369,7 +278,6 @@ iframe
     margin-top: 15px;
 }
 
-
 /* --------------------------
             FOOTER
    --------------------------
@@ -378,47 +286,39 @@ iframe
 
 footer
 {
-    background-color: #f7f7f7;
-    padding: 20px 0 40px;
+  background-color: #f7f7f7;
+  padding: 20px 0 40px;
 }
 
 footer span
 {
-    color: #333333;
-    font-size: 25px;
-    line-height: 35px;
+  color: #333333;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 footer span:hover
 {
-    color: #333333;
-    font-size: 27px;
+  color: #333333;
+  font-size: 27px;
 }
 
-footer h5
+footer p
 {
-    color: #982C29;
-    font-weight: bold;
-}
-
-footer h6
-{
-    color: #982C29;
-    font-weight: bold;
-}
-
-.reseau img
-{
-    height: 100px;
+  color: #982C29;
+  font-weight: bold;
+  font-size: 0.5em;
 }
 
 .insta
 {
-    color: #333333;
-    height: 50px;
+  color: #333333;
+  height: 50px;
+  font-size: 2rem;
 }
 
 .facebook
 {
-    color: #0676E8;
+  color: #333333;
+  font-size: 2rem;
 }
