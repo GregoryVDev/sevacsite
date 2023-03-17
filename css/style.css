@@ -37,8 +37,11 @@ section .heading {
    --------------------------
 */
 
+
 nav img {
-    height: 80px;
+    height: 65px;
+    position: absolute;
+    top: 5px;
 }
 
 .navbar-toggler
@@ -55,6 +58,11 @@ nav img {
   background-color: #f7f7f7;
   letter-spacing: 2px;
   text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  padding-top: 10px;
 }
 
 .navbar-nav {
@@ -81,14 +89,14 @@ nav img {
 */
 
 #biographie {
-    background-color:#982C29;
-    color: #f7f7f7;
+  background-color:#982C29;
+  color: #f7f7f7;
 }
 
 #bio {
-        padding: 15px 0 15px;
-        font-style: italic;
-        text-align: center;
+  padding: 15px 0 15px;
+  font-style: italic;
+  text-align: center;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -114,9 +122,10 @@ nav img {
   
 
 #biographie img {
-    height: 525px;
+    height: 527px;
     width: 450px;
     animation: apparition 1.5s ease-out;
+    padding-right: 10px;
 }
 
 @keyframes apparition {
@@ -212,6 +221,26 @@ nav img {
   color: #f7f7f7;
   padding-bottom: 8px;
 
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* --------------------------
