@@ -1,3 +1,26 @@
+<?php
+if (isset($_POST['prenom']))
+{
+
+    $prenom = $_POST['prenom'];
+    $nom = $_POST['nom'];
+    $email = $_POST['email'];
+    $objet = $_POST['objet'];
+    $message = $_POST['message'];
+
+    $contenu = "Message provenant de : " . $prenom . " " . $nom . "\n Email de contact : " . $email . " \n \n " . $message . "";
+
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $to = "premiertourprod@gmail.com";
+    $subject = "Formulaire : " . $objet;
+    $headers = "Message du site web";
+    mail($to,$subject,$contenu, $headers);
+
+    $retourmessage = "Votre message a bien été envoyé.";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -270,31 +293,34 @@
         <section id="contact">
             <div class="heading">
                 <h1>Contact</h1>
+                <?php if(isset($_POST['prenom'])) { ?><p style="color: green;"><?php echo $retourmessage; ?></p><?php } ?>
             </div>
             <div class="container" style="text-align:center;">
-                <div class="row" style="padding-top:5px;">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Prénom" aria-label="First name" required>
+                <form action="#contact" method="post">
+                    <div class="row" style="padding-top:5px;">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Prénom" aria-label="First name" name="prenom" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nom" aria-label="Last name" name="nom" required>
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nom" aria-label="Last name" required>
+                    <div class="row" style="padding-top:15px;">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="email@exemple.fr" aria-label="email" name="email" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Objet du message" aria-label="objet" name="objet" required>
+                        </div>
+                        <div class="mb-3" style="padding-top:15px;">
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" placeholder="Votre message" id="exampleFormControlTextarea1" rows="3" name="message" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="button1" type="submit">Envoyer</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="padding-top:15px;">
-                    <div class="col">
-                        <input type="email" class="form-control" placeholder="email@exemple.fr" aria-label="email" required>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Objet du message" aria-label="objet" required>
-                    </div>
-                    <div class="mb-3" style="padding-top:15px;">
-                        <label for="exampleFormControlTextarea1" class="form-label"></label>
-                        <textarea class="form-control" placeholder="Votre message" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                      </div>
-                      <div class="col-12">
-                        <button class="button1" type="submit">Envoyer</button>
-                      </div>
-                </div>               
+                </form>               
             </div>
         </section>
         <!-- End Section Contact -->
