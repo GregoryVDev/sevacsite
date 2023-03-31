@@ -331,7 +331,7 @@ if (isset($_POST['prenom']))
                     <div class="reseaux">
                         <a href="https://www.instagram.com/sevac_humour/" target="_blank" class="insta"><i class="bi bi-instagram"></i></a>
                         <a href="https://www.facebook.com/sevacarto" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <p>© COPYRIGHT - TOUS DROITS RÉSERVÉS - SEVAC</p>
+                        <p>© COPYRIGHT - TOUS DROITS RÉSERVÉS - Grégory</p>
                     </div>
                 </div>
             </div>
